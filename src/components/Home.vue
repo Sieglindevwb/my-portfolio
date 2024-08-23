@@ -1,7 +1,24 @@
 <template>
-  <h1>Work</h1>
-  <h1>Projects</h1>
-  <h1>About</h1>
+  <div class="main-div">
+    <div class="left">
+      <h1>Work</h1>
+      <h1>Projects</h1>
+      <h1>About</h1>
+    </div>
+
+    <div class="right">
+      <h2>Sieglinde Vanwynsberghe</h2>
+      <p>
+        Ik ben een leergierige en flexibele Junior Web Developer die graag<br />
+        nieuwe uitdagingen aangaat. Mijn creativiteit stelt me in staat<br />
+        innovatieve oplossingen te vinden. Ik zoek een omgeving waar ik mijn<br />
+        passie voor webontwikkeling kan delen en anderen kan motiveren.<br />
+        Daarnaast ben ik iemand die makkelijk ontplooi in een familiaire<br />
+        omgeving, waar collega’s dicht bij elkaar staan en waar er ruimte is<br />
+        voor persoonlijke groei en ontwikkeling.
+      </p>
+    </div>
+  </div>
 </template>
 
 <style scoped>
@@ -9,5 +26,32 @@ h1 {
   font-family: 'UnifrakturMaguntia', cursive;
   font-weight: 400;
   font-style: normal;
+  font-size: 220px;
+}
+h2 {
+  font-weight: 600;
+}
+
+.main-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+  gap: 120px; /* Adds space between the items */
+}
+
+.left,
+.right {
+  padding: 20px;
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+  align-self: end; /* Aligns the block to the bottom of the grid cell */
+  width: 22vw;
+  margin-bottom: 70px;
 }
 </style>

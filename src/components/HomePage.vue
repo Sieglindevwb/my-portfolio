@@ -2,8 +2,8 @@
   <div class="main-div">
     <div class="left">
       <router-link to="/projects"><h1>Projects</h1></router-link>
-      <h1>About</h1>
-      <h1>Contact</h1>
+      <router-link to="/about"><h1>About</h1></router-link>
+      <router-link to="/contact"><h1>Contact</h1></router-link>
     </div>
 
     <div class="right">

@@ -30,15 +30,6 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-  font-family: 'Fraunces', system-ui;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 220px;
-}
-h1:hover {
-  font-style: italic;
-}
 h2 {
   font-weight: 600;
 }

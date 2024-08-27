@@ -1,9 +1,9 @@
 <template>
   <div class="main-div">
     <div class="left">
-      <h1>Work</h1>
       <h1>Projects</h1>
       <h1>About</h1>
+      <h1>Contact</h1>
     </div>
 
     <div class="right">
@@ -23,10 +23,13 @@
 
 <style scoped>
 h1 {
-  font-family: 'UnifrakturMaguntia', cursive;
+  font-family: 'Fraunces', system-ui;
   font-weight: 400;
   font-style: normal;
   font-size: 220px;
+}
+h1:hover {
+  font-style: italic;
 }
 h2 {
   font-weight: 600;

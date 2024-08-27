@@ -43,8 +43,8 @@ h2 {
 
 .main-div {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Creates two equal columns */
-  gap: 120px; /* Adds space between the items */
+  grid-template-columns: 1fr 1fr;
+  gap: 300px;
 }
 
 .left,

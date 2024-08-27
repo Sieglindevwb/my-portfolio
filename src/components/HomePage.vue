@@ -9,13 +9,12 @@
     <div class="right">
       <h2>Sieglinde Vanwynsberghe</h2>
       <p>
-        Ik ben een leergierige en flexibele Junior Web Developer die graag<br />
-        nieuwe uitdagingen aangaat. Mijn creativiteit stelt me in staat<br />
-        innovatieve oplossingen te vinden. Ik zoek een omgeving waar ik mijn<br />
-        passie voor webontwikkeling kan delen en anderen kan motiveren.<br />
-        Daarnaast ben ik iemand die makkelijk ontplooi in een familiaire<br />
-        omgeving, waar collega’s dicht bij elkaar staan en waar er ruimte is<br />
-        voor persoonlijke groei en ontwikkeling.
+        I am an eager and flexible Junior Web Developer who enjoys taking on new
+        challenges. My creativity enables me to find innovativesolutions. I am
+        looking for an environment where I can share my passion for web
+        development and motivate others. Additionally, I thrive in a familial
+        environment where colleagues are close-knit and there is room for
+        personal growth and development.
       </p>
     </div>
   </div>
@@ -24,6 +23,9 @@
 <script>
 export default {
   name: 'home',
+  mounted() {
+    document.documentElement.style.setProperty('--color-background', '#c7c350'); // Green background
+  },
 };
 </script>
 

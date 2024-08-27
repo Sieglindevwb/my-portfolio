@@ -1,12 +1,12 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue';
-import Home from './components/Home.vue';
+import HomePage from './components/HomePage.vue';
 import TheWelcome from './components/TheWelcome.vue';
 </script>
 
 <template>
   <main>
-    <Home />
+    <router-view />
   </main>
 </template>
 

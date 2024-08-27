@@ -1,7 +1,7 @@
 <template>
   <div class="main-div">
     <div class="left">
-      <h1>Projects</h1>
+      <router-link to="/projects"><h1>Projects</h1></router-link>
       <h1>About</h1>
       <h1>Contact</h1>
     </div>
@@ -20,6 +20,12 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'home',
+};
+</script>
 
 <style scoped>
 h1 {

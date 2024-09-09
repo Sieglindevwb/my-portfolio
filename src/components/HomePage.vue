@@ -38,8 +38,7 @@ h2 {
 
 .main-div {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 300px;
+  grid-template-columns: 1fr 22vw;
 }
 
 .left,
@@ -55,7 +54,7 @@ h2 {
   text-align: right;
   align-self: end; /* Aligns the block to the bottom of the grid cell */
   width: 22vw;
-  margin-bottom: 70px;
+  margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 1550px) {

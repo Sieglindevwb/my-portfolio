@@ -3,6 +3,7 @@ import HomePage from './components/HomePage.vue';
 import ProjectPage from './components/ProjectPage.vue';
 import AboutPage from './components/AboutPage.vue';
 import ContactPage from './components/ContactPage.vue';
+import WeatherAppPage from './components/projects/WeatherAppPage.vue';
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/contact',
     name: 'contact',
     component: ContactPage,
+  },
+  {
+    path: '/projects/weatherApp',
+    name: 'weatherApp',
+    component: WeatherAppPage,
   },
 ];
 

@@ -1,9 +1,11 @@
 <template>
   <div class="projects">
-    <router-link to="/projects"><h1>Project 1</h1></router-link>
-    <router-link to="/projects"><h1>Project 2</h1></router-link>
-    <router-link to="/projects"><h1>Project 3</h1></router-link>
-    <router-link to="/projects"><h1>Project 4</h1></router-link>
+    <router-link to="/projects/weatherApp"
+      ><a>Check your weather</a></router-link
+    >
+    <router-link to="/projects"><a>Project 2</a></router-link>
+    <router-link to="/projects"><a>Project 3</a></router-link>
+    <router-link to="/projects"><a>Project 4</a></router-link>
   </div>
 </template>
 

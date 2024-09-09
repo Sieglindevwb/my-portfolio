@@ -78,6 +78,7 @@ h1 {
   white-space: nowrap;
   overflow: visible;
 }
+
 h2 {
   font-size: 30px;
 }
@@ -147,6 +148,35 @@ p {
   }
   20% {
     bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1520px) {
+  h1 {
+    font-size: 200px;
+  }
+  .main-div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .left,
+  .right {
+    text-align: center;
+    width: 20vw;
+  }
+
+  .left {
+    text-align: left;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .right {
+    grid-area: 4 / 4 / 5 / 5;
+    text-align: right;
+    width: 22vw;
   }
 }
 </style>

@@ -1,9 +1,11 @@
 <template>
   <div class="main-div">
     <div class="left">
-      <router-link to="/projects"><h1>Projects</h1></router-link>
-      <router-link to="/about"><h1>About</h1></router-link>
-      <router-link to="/contact"><h1>Contact</h1></router-link>
+      <router-link to="/projects"><a>Projects</a></router-link
+      ><br />
+      <router-link to="/about"><a>About</a></router-link
+      ><br />
+      <router-link to="/contact"><a>Contact</a></router-link>
     </div>
 
     <div class="right">
@@ -42,7 +44,6 @@ h2 {
 
 .left,
 .right {
-  padding: 20px;
   text-align: center;
 }
 
@@ -55,5 +56,11 @@ h2 {
   align-self: end; /* Aligns the block to the bottom of the grid cell */
   width: 22vw;
   margin-bottom: 70px;
+}
+
+@media screen and (min-width: 1550px) {
+  a {
+    font-size: 220px;
+  }
 }
 </style>

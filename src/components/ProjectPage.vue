@@ -1,11 +1,9 @@
 <template>
   <div class="projects">
-    <router-link to="/projects/weatherApp"
-      ><a>Check your weather</a></router-link
-    >
-    <router-link to="/projects"><a>Project 2</a></router-link>
-    <router-link to="/projects"><a>Project 3</a></router-link>
-    <router-link to="/projects"><a>Project 4</a></router-link>
+    <router-link to="/projects/weatherApp"><a>1. Weather App</a></router-link>
+    <router-link to="/projects"><a>2. Schedule planner</a></router-link>
+    <router-link to="/projects"><a>3. CMS project</a></router-link>
+    <router-link to="/projects"><a>4. Graphic Designer</a></router-link>
   </div>
 </template>
 
@@ -19,7 +17,8 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-  font-size: 150px;
+a {
+  display: flex;
+  font-size: 100px;
 }
 </style>

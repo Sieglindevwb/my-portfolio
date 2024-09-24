@@ -4,6 +4,7 @@ import ProjectPage from './components/ProjectPage.vue';
 import AboutPage from './components/AboutPage.vue';
 import ContactPage from './components/ContactPage.vue';
 import WeatherAppPage from './components/projects/WeatherAppPage.vue';
+import TaskTracker from './components/projects/TaskTracker.vue';
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: '/projects/weatherApp',
     name: 'weatherApp',
     component: WeatherAppPage,
+  },
+  {
+    path: '/projects/taskTracker',
+    name: 'taskTracker',
+    component: TaskTracker,
   },
 ];
 

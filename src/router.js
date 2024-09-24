@@ -11,31 +11,37 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomePage,
+    meta: { showNavbar: false },
   },
   {
     path: '/projects',
     name: 'projects',
     component: ProjectPage,
+    meta: { showNavbar: true },
   },
   {
     path: '/about',
     name: 'about',
     component: AboutPage,
+    meta: { showNavbar: true },
   },
   {
     path: '/contact',
     name: 'contact',
     component: ContactPage,
+    meta: { showNavbar: true },
   },
   {
     path: '/projects/weatherApp',
     name: 'weatherApp',
     component: WeatherAppPage,
+    meta: { showNavbar: true },
   },
   {
     path: '/projects/taskTracker',
     name: 'taskTracker',
     component: TaskTracker,
+    meta: { showNavbar: true },
   },
 ];
 

@@ -5,6 +5,7 @@ import AboutPage from './components/AboutPage.vue';
 import ContactPage from './components/ContactPage.vue';
 import WeatherAppPage from './components/projects/WeatherAppPage.vue';
 import TaskTracker from './components/projects/TaskTracker.vue';
+import GraphicDesign from './components/projects/GraphicDesign.vue';
 
 const routes = [
   {
@@ -41,6 +42,12 @@ const routes = [
     path: '/projects/taskTracker',
     name: 'taskTracker',
     component: TaskTracker,
+    meta: { showNavbar: true },
+  },
+  {
+    path: '/projects/graphicDesign',
+    name: 'graphicDesign',
+    component: GraphicDesign,
     meta: { showNavbar: true },
   },
 ];

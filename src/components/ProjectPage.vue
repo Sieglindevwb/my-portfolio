@@ -3,7 +3,9 @@
     <router-link to="/projects/weatherApp"><a>1. Weather App</a></router-link>
     <router-link to="/projects/taskTracker"><a>2. Task Tracker</a></router-link>
     <router-link to="/projects"><a>3. CMS project</a></router-link>
-    <router-link to="/projects"><a>4. Graphic Design</a></router-link>
+    <router-link to="/projects/graphicDesign"
+      ><a>4. Graphic Design</a></router-link
+    >
   </div>
 </template>
 

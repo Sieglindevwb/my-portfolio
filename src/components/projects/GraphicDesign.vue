@@ -114,7 +114,7 @@ export default {
 <style scoped>
 .column {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  grid-template-columns: repeat(6, 1fr); /* 3 equal-width columns */
   grid-gap: 0; /* No gap between the images */
   justify-items: center;
   margin-top: 4rem;

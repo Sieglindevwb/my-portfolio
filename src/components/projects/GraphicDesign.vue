@@ -46,6 +46,61 @@
         alt="image 5 package"
       />
     </div>
+    <div class="column">
+      <img
+        src="/src/assets/affiches/AFFICHE_CD_PINO.jpg"
+        alt="image carpe diem"
+      />
+      <img
+        src="/src/assets/affiches/AFFICHE_CD_PINO3.jpg"
+        alt="image 2 carpe diem"
+      />
+    </div>
+    <div class="column">
+      <img src="/src/assets/affiches/Kaartje_Recto.jpg" alt="image affiche" />
+      <img
+        src="/src/assets/affiches/RommelmarktzennijsNederlands_Page_1.jpg"
+        alt="image 2"
+      />
+    </div>
+    <div class="column">
+      <img src="/src/assets/affiches/monday.jpg" alt="image monday" />
+      <img src="/src/assets/affiches/monday-blue.jpg" alt="image blue monday" />
+    </div>
+    <div class="column">
+      <img src="/src/assets/interieur/TheeMCkan.jpg" alt="image theekan" />
+      <img
+        src="/src/assets/interieur/Vanwynsberghe_Sieglinde20190930(2).jpg"
+        alt="image interieur 1"
+      />
+      <img
+        src="/src/assets/interieur/Vanwynsberghe_Sieglinde20190930(3).jpg"
+        alt="image interieur 2"
+      />
+      <img
+        src="/src/assets/interieur/Vanwynsberghe_Sieglinde20190930.jpg"
+        alt="image interieur 3"
+      />
+    </div>
+    <div class="column">
+      <img
+        src="/src/assets/illustraties/Bovengang-aangepast.jpg"
+        alt="image 1"
+      />
+      <img src="/src/assets/illustraties/CatRules.jpg" alt="image 2" />
+      <img
+        src="/src/assets/illustraties/illustratie_schaduw.png"
+        alt="image 3"
+      />
+      <img
+        src="/src/assets/illustraties/Kattenpaal-aangepast.jpg"
+        alt="image 4"
+      />
+      <img
+        src="/src/assets/illustraties/SieglindeVWB_Perspectieftool_Tekengebied 1.jpg"
+        alt="image 5"
+      />
+    </div>
   </div>
 </template>
 <script>

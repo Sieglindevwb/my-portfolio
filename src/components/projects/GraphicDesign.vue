@@ -2,9 +2,42 @@
   <div class="graphic-design">
     <h1>My graphic design journey</h1>
     <div class="column_wrap">
-      <div class="column" @scroll="handleScroll">
-        <div v-for="(image, index) in images" :key="index">
-          <img :src="image.src" :alt="`Image ${index + 1}`" />
+      <div class="column">
+        <div>
+          <img
+            src="/src/assets/platenbeurs/Affiche2.jpg"
+            alt="image 1 bierglas"
+          />
+        </div>
+        <div>
+          <img
+            src="/src/assets/platenbeurs/Brochures.jpg"
+            alt="image 2 folderachter"
+          />
+        </div>
+        <div>
+          <img
+            src="/src/assets/platenbeurs/enveloppe.jpg"
+            alt="image 3 foldervoor"
+          />
+        </div>
+        <div>
+          <img
+            src="/src/assets/platenbeurs/huisstijl.jpg"
+            alt="image 4 trimaar"
+          />
+        </div>
+        <div>
+          <img
+            src="/src/assets/platenbeurs/magazineboek.jpg"
+            alt="image 5 package"
+          />
+        </div>
+        <div>
+          <img
+            src="/src/assets/platenbeurs/t-shirtlogo3_platenbeurs.jpg"
+            alt="image 5 package"
+          />
         </div>
       </div>
     </div>

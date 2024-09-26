@@ -1,11 +1,14 @@
 <template>
   <div class="graphic-design">
     <h1>My graphic design journey</h1>
-    <div class="column" @scroll="handleScroll">
-      <div v-for="(image, index) in images" :key="index">
-        <img :src="image.src" :alt="`Image ${index + 1}`" />
+    <div class="column_wrap">
+      <div class="column" @scroll="handleScroll">
+        <div v-for="(image, index) in images" :key="index">
+          <img :src="image.src" :alt="`Image ${index + 1}`" />
+        </div>
       </div>
     </div>
+
     <div class="column">
       <div>
         <img
@@ -158,6 +161,43 @@ export default {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.column_wrap {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.column_wrap:before {
+  content: '';
+  height: 100%;
+  width: 100px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 168, 216, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.column_wrap:after {
+  content: '';
+  height: 100%;
+  width: 100px;
+  background: linear-gradient(
+    -90deg,
+    rgb(255, 168, 216, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
 .column {
   display: flex;
   overflow-x: scroll; /* Horizontal scrolling */

@@ -27,127 +27,171 @@
         <button @click="nextSlide">Next</button>
       </div>
     </div>
-    <!--
-    <div class="column">
-      <div>
-        <img
-          src="/src/assets/trimaarbier/Bierglas.jpg"
-          alt="image 1 bierglas"
-        />
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide" v-if="currentIndex === 0">
+          <img src="/src/assets/trimaarbier/Bierglas.jpg" alt="Image 1" />
+        </div>
+        <div class="slide" v-if="currentIndex === 1">
+          <img src="/src/assets/trimaarbier/folderachter.jpg" alt="Image 2" />
+        </div>
+        <div class="slide" v-if="currentIndex === 2">
+          <img src="/src/assets/trimaarbier/foldervoor.jpg" alt="Image 4" />
+        </div>
+        <div class="slide" v-if="currentIndex === 3">
+          <img src="/src/assets/trimaarbier/TrimaarMockUp2.png" alt="Image 5" />
+        </div>
+        <div class="slide" v-if="currentIndex === 4">
+          <img src="/src/assets/trimaarbier/TrimaarPackage.jpg" alt="Image 6" />
+        </div>
       </div>
-      <div>
-        <img
-          src="/src/assets/trimaarbier/folderachter.jpg"
-          alt="image 2 folderachter"
-        />
-      </div>
-      <div>
-        <img
-          src="/src/assets/trimaarbier/foldervoor.jpg"
-          alt="image 3 foldervoor"
-        />
-      </div>
-      <div>
-        <img
-          src="/src/assets/trimaarbier/TrimaarMockUp2.png"
-          alt="image 4 trimaar"
-        />
-      </div>
-      <div>
-        <img
-          src="/src/assets/trimaarbier/TrimaarPackage.jpg"
-          alt="image 5 package"
-        />
+      <div class="slider-controls">
+        <button @click="prevSlide">Previous</button>
+        <button @click="nextSlide">Next</button>
       </div>
     </div>
-    <div class="column">
-      <div>
-        <img
-          src="/src/assets/affiches/AFFICHE_CD_PINO.jpg"
-          alt="image carpe diem"
-        />
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide" v-if="currentIndex === 0">
+          <img src="/src/assets/affiches/AFFICHE_CD_PINO.jpg" alt="Image 1" />
+        </div>
+        <div class="slide" v-if="currentIndex === 1">
+          <img src="/src/assets/affiches/AFFICHE_CD_PINO3.jpg" alt="Image 2" />
+        </div>
+        <div class="slide" v-if="currentIndex === 2">
+          <img src="/src/assets/affiches/AFFICHE_CD_PINO.jpg" alt="Image 1" />
+        </div>
+        <div class="slide" v-if="currentIndex === 3">
+          <img src="/src/assets/affiches/AFFICHE_CD_PINO3.jpg" alt="Image 2" />
+        </div>
+        <div class="slide" v-if="currentIndex === 4">
+          <img src="/src/assets/affiches/AFFICHE_CD_PINO.jpg" alt="Image 1" />
+        </div>
       </div>
-      <div>
-        <img
-          src="/src/assets/affiches/AFFICHE_CD_PINO3.jpg"
-          alt="image 2 carpe diem"
-        />
-      </div>
-    </div>
-    <div class="column">
-      <div>
-        <img src="/src/assets/affiches/Kaartje_Recto.jpg" alt="image affiche" />
-      </div>
-      <div>
-        <img
-          src="/src/assets/affiches/RommelmarktzennijsNederlands_Page_1.jpg"
-          alt="image 2"
-        />
+      <div class="slider-controls">
+        <button @click="prevSlide">Previous</button>
+        <button @click="nextSlide">Next</button>
       </div>
     </div>
-    <div class="column">
-      <div>
-        <img src="/src/assets/affiches/monday.jpg" alt="image monday" />
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide" v-if="currentIndex === 0">
+          <img src="/src/assets/affiches/Kaartje_Recto.jpg" alt="Image 1" />
+        </div>
+        <div class="slide" v-if="currentIndex === 1">
+          <img
+            src="/src/assets/affiches/RommelmarktzennijsNederlands_Page_1.jpg"
+            alt="Image 2"
+          />
+        </div>
+        <div class="slide" v-if="currentIndex === 2">
+          <img src="/src/assets/affiches/Kaartje_Recto.jpg" alt="Image 1" />
+        </div>
+        <div class="slide" v-if="currentIndex === 3">
+          <img
+            src="/src/assets/affiches/RommelmarktzennijsNederlands_Page_1.jpg"
+            alt="Image 2"
+          />
+        </div>
+        <div class="slide" v-if="currentIndex === 4">
+          <img src="/src/assets/affiches/Kaartje_Recto.jpg" alt="Image 1" />
+        </div>
       </div>
-      <div>
-        <img
-          src="/src/assets/affiches/monday-blue.jpg"
-          alt="image blue monday"
-        />
-      </div>
-    </div>
-    <div class="column">
-      <div>
-        <img src="/src/assets/interieur/TheeMCkan.jpg" alt="image theekan" />
-      </div>
-      <div>
-        <img
-          src="/src/assets/interieur/Vanwynsberghe_Sieglinde20190930(2).jpg"
-          alt="image interieur 1"
-        />
-      </div>
-      <div>
-        <img
-          src="/src/assets/interieur/Vanwynsberghe_Sieglinde20190930(3).jpg"
-          alt="image interieur 2"
-        />
-      </div>
-      <div>
-        <img
-          src="/src/assets/interieur/Vanwynsberghe_Sieglinde20190930.jpg"
-          alt="image interieur 3"
-        />
+      <div class="slider-controls">
+        <button @click="prevSlide">Previous</button>
+        <button @click="nextSlide">Next</button>
       </div>
     </div>
-    <div class="column">
-      <div>
-        <img
-          src="/src/assets/illustraties/Bovengang-aangepast.jpg"
-          alt="image 1"
-        />
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide" v-if="currentIndex === 0">
+          <img src="/src/assets/affiches/monday.jpg" alt="Image 1" />
+        </div>
+        <div class="slide" v-if="currentIndex === 1">
+          <img src="/src/assets/affiches/monday-blue.jpg" alt="Image 2" />
+        </div>
+        <div class="slide" v-if="currentIndex === 2">
+          <img src="/src/assets/affiches/monday.jpg" alt="Image 1" />
+        </div>
+        <div class="slide" v-if="currentIndex === 3">
+          <img src="/src/assets/affiches/monday-blue.jpg" alt="Image 2" />
+        </div>
+        <div class="slide" v-if="currentIndex === 4">
+          <img src="/src/assets/affiches/monday.jpg" alt="Image 1" />
+        </div>
       </div>
-      <div>
-        <img src="/src/assets/illustraties/CatRules.jpg" alt="image 2" />
+      <div class="slider-controls">
+        <button @click="prevSlide">Previous</button>
+        <button @click="nextSlide">Next</button>
       </div>
-      <div>
-        <img
-          src="/src/assets/illustraties/illustratie_schaduw.png"
-          alt="image 3"
-        />
+    </div>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide" v-if="currentIndex === 0">
+          <img src="/src/assets/interieur/TheeMCkan.jpg" alt="Image 1" />
+        </div>
+        <div class="slide" v-if="currentIndex === 1">
+          <img
+            src="/src/assets/interieur/Vanwynsberghe_Sieglinde20190930(2).jpg"
+            alt="Image 2"
+          />
+        </div>
+        <div class="slide" v-if="currentIndex === 2">
+          <img
+            src="/src/assets/interieur/Vanwynsberghe_Sieglinde20190930(3).jpg"
+            alt="Image 1"
+          />
+        </div>
+        <div class="slide" v-if="currentIndex === 3">
+          <img
+            src="/src/assets/interieur/Vanwynsberghe_Sieglinde20190930.jpg"
+            alt="Image 2"
+          />
+        </div>
+        <div class="slide" v-if="currentIndex === 4">
+          <img src="/src/assets/interieur/TheeMCkan.jpg" alt="Image 1" />
+        </div>
       </div>
-      <div>
-        <img
-          src="/src/assets/illustraties/Kattenpaal-aangepast.jpg"
-          alt="image 4"
-        />
+      <div class="slider-controls">
+        <button @click="prevSlide">Previous</button>
+        <button @click="nextSlide">Next</button>
       </div>
-      <div>
-        <img
-          src="/src/assets/illustraties/SieglindeVWB_Perspectieftool_Tekengebied 1.jpg"
-          alt="image 5"
-        />
+    </div>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide" v-if="currentIndex === 0">
+          <img
+            src="/src/assets/illustraties/Bovengang-aangepast.jpg"
+            alt="Image 1"
+          />
+        </div>
+        <div class="slide" v-if="currentIndex === 1">
+          <img src="/src/assets/illustraties/CatRules.jpg" alt="Image 2" />
+        </div>
+        <div class="slide" v-if="currentIndex === 2">
+          <img
+            src="/src/assets/illustraties/illustratie_schaduw.png"
+            alt="Image 1"
+          />
+        </div>
+        <div class="slide" v-if="currentIndex === 3">
+          <img
+            src="/src/assets/illustraties/Kattenpaal-aangepast.jpg"
+            alt="Image 2"
+          />
+        </div>
+        <div class="slide" v-if="currentIndex === 4">
+          <img
+            src="/src/assets/illustraties/SieglindeVWB_Perspectieftool_Tekengebied 1.jpg"
+            alt="Image 1"
+          />
+        </div>
       </div>
-    </div>-->
+      <div class="slider-controls">
+        <button @click="prevSlide">Previous</button>
+        <button @click="nextSlide">Next</button>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -192,30 +236,33 @@ export default {
 <style scoped>
 .slider-container {
   margin: 0 auto; /* Center horizontally */
-  width: 50%; /* Adjust the width as needed */
+  width: 100%; /* Adjust the width as needed */
   overflow: hidden;
   position: relative;
 }
 
 .slider {
   display: flex;
-}
-
-.slide {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-img {
-  width: 100%;
+.slide {
+  flex: 0 0 auto; /* Ensure equal width */
   height: 100%;
+  display: flex;
+}
+
+img {
+  height: 500px;
+  width: 500px;
   object-fit: cover;
 }
 
 .slider-controls {
+  margin-bottom: 10px;
+  margin-top: 10px;
   text-align: center;
-  margin-top: 20px; /* Adjust bottom padding as needed */
 }
 
 .slider-controls button {
@@ -226,49 +273,4 @@ img {
   color: #2732cf;
   margin: 2px;
 }
-/*.column_wrap {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.column {
-  display: flex;
-  overflow-x: scroll; 
-  height: 70vh; 
-  flex-direction: row;
-  scroll-snap-type: x mandatory; 
-  position: relative;
-  margin-top: 50px;
-}
-
-.column div {
-  flex: 0 0 500px; 
-  height: 410px; 
-  scroll-snap-align: start; 
-  margin-right: 10px; 
-  bottom: 15%;
-  position: absolute;
-  -webkit-animation: linear infinite;
-  -webkit-animation-name: run;
-  -webkit-animation-duration: 5s;
-}
-
-@-webkit-keyframes run {
-  0% {
-    left: 0;
-  }
-  50% {
-    left: 100%;
-  }
-  100% {
-    left: 0;
-  }
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}*/
 </style>

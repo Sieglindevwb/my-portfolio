@@ -15,7 +15,10 @@
       </p>
       <hr class="new4" />
       <div class="colorbg">
-        <img src="/src/assets/weatherapp.png" alt="image-weather-app" />
+        <img
+          src="/src\assets\pexels-suzyhazelwood-1226398.jpg"
+          alt="image-weather-app"
+        />
         <a
           class="hover-text"
           href="https://github.com/Sieglindevwb/task-tracker"
@@ -31,6 +34,17 @@
         application is designed to streamline task management and improve
         productivity by providing users with a centralized platform for
         organizing their schedules.
+      </p>
+    </div>
+    <div>
+      <h2>Getting Started</h2>
+      <p>
+        To get a copy of the project up and running on your local machine for
+        development and testing purposes. Go to my
+        <a class="linktext" href="https://github.com/Sieglindevwb/task-tracker"
+          >Github repository</a
+        >
+        and follow the installing steps first.
       </p>
     </div>
   </div>
@@ -84,7 +98,8 @@ li {
   background: #2732cf;
 }
 .colorbg img {
-  width: 340px;
+  width: 100%;
+  height: 100%;
   border-radius: 10%;
   display: block;
 }
@@ -120,6 +135,11 @@ hr.new4 {
 
 .colorbg:hover .hover-text {
   opacity: 1; /* Show the text when hovered */
+}
+
+img {
+  width: 100px;
+  height: 100px;
 }
 
 @keyframes growLine {

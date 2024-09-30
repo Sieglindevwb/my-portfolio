@@ -10,15 +10,12 @@
           <img src="/src/assets/platenbeurs/Brochures.jpg" alt="Image 2" />
         </div>
         <div class="slide" v-if="currentIndex === 2">
-          <img src="/src/assets/platenbeurs/enveloppe.jpg" alt="Image 3" />
-        </div>
-        <div class="slide" v-if="currentIndex === 3">
           <img src="/src/assets/platenbeurs/huisstijl.jpg" alt="Image 4" />
         </div>
-        <div class="slide" v-if="currentIndex === 4">
+        <div class="slide" v-if="currentIndex === 3">
           <img src="/src/assets/platenbeurs/magazineboek.jpg" alt="Image 5" />
         </div>
-        <div class="slide" v-if="currentIndex === 5">
+        <div class="slide" v-if="currentIndex === 4">
           <img
             src="/src/assets/platenbeurs/t-shirtlogo3_platenbeurs.jpg"
             alt="Image 6"
@@ -158,32 +155,15 @@ export default {
   name: 'graphicDesign',
   data() {
     return {
-      /*imageUrls: [
-        '/src/assets/platenbeurs/Affiche2.jpg',
-        '/src/assets/platenbeurs/Brochures.jpg',
-        '/src/assets/platenbeurs/enveloppe.jpg',
-        '/src/assets/platenbeurs/huisstijl.jpg',
-        '/src/assets/platenbeurs/magazineboek.jpg',
-        '/src/assets/platenbeurs/t-shirtlogo3_platenbeurs.jpg',
-        // ... other image URLs ...
-      ],*/
       currentIndex: 0,
-      autoSlideInterval: 3000, // Adjust the interval as needed
+      autoSlideInterval: 5000, // Adjust the interval as needed
       isAutoSliding: true,
-      transitionDuration: 500,
       totalSlides: 5,
-      //isUserScrolling: false,
-      //scrollTimeout: null,
-      //scrollSpeed: 1, // Set the speed of the auto-scrolling
     };
   },
   mounted() {
     document.documentElement.style.setProperty('--color-background', '#ffa8d8');
     this.startAutoSlide();
-    //this.startAutoScroll();
-
-    // Detect user interaction on scroll
-    //this.$refs.column.addEventListener('scroll', this.handleUserScroll);
   },
 
   methods: {
@@ -207,81 +187,45 @@ export default {
       this.startAutoSlide();
     },
   },
-  // Function to start auto-scrolling
-  //startAutoScroll() {
-  //const column = this.$refs.column;
-
-  //const scroll = () => {
-  /*if (!this.isUserScrolling) {
-          // Automatically scroll left by 1 pixel
-          column.scrollLeft += this.scrollSpeed;
-
-          // Reset to the beginning if we reach the end
-          if (column.scrollLeft >= column.scrollWidth - column.clientWidth) {
-            column.scrollLeft = 0;
-          }
-        }
-
-        // Continue scrolling
-        requestAnimationFrame(scroll);
-      };
-
-      scroll(); // Start the scroll
-    },
-
-    // Detect user scrolling and stop auto-scrolling temporarily
-    handleUserScroll() {
-      this.isUserScrolling = true;
-
-      // Clear previous timeout
-      if (this.scrollTimeout) clearTimeout(this.scrollTimeout);
-
-      // After the user stops scrolling, restart auto-scroll after 3 seconds
-      this.scrollTimeout = setTimeout(() => {
-        this.isUserScrolling = false;
-      }, 3000); // 3-second delay before resuming auto-scroll
-    },
-  },*/
 };
 </script>
 <style scoped>
 .slider-container {
-  width: 800px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center horizontally */
+  width: 50%; /* Adjust the width as needed */
   overflow: hidden;
   position: relative;
-  height: 70vh;
 }
 
 .slider {
   display: flex;
-  transition: transform 0.5s ease-in-out; /* Adjust the transition duration */
-  position: absolute;
-  left: 0;
 }
 
 .slide {
-  flex: 0 0 100%; /* Ensure equal width for images */
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.slide img {
+img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .slider-controls {
   text-align: center;
+  margin-top: 20px; /* Adjust bottom padding as needed */
 }
 
-/* Add this CSS to create a sliding effect */
-.slider.sliding {
-  transform: translateX(-100%);
+.slider-controls button {
+  background: #ffa8d8;
+  font-size: 19px;
+  padding: 10px;
+  border-color: #2732cf;
+  color: #2732cf;
+  margin: 2px;
 }
-/* Hide scrollbar */
-::-webkit-scrollbar {
-  display: none;
-}
-
 /*.column_wrap {
   width: 100%;
   overflow: hidden;

@@ -4,25 +4,25 @@
     <div class="slider-container">
       <div class="slider">
         <div class="slide" v-if="currentIndex === 0">
-          <img :src="imageUrls[0]" alt="Image 1" />
+          <img src="/src/assets/platenbeurs/Affiche2.jpg" alt="Image 1" />
         </div>
         <div class="slide" v-if="currentIndex === 1">
-          <img :src="imageUrls[1]" alt="Image 2" />
+          <img src="/src/assets/platenbeurs/Brochures.jpg" alt="Image 2" />
         </div>
         <div class="slide" v-if="currentIndex === 2">
-          <img :src="imageUrls[2]" alt="Image 3" />
+          <img src="/src/assets/platenbeurs/enveloppe.jpg" alt="Image 3" />
         </div>
         <div class="slide" v-if="currentIndex === 3">
-          <img :src="imageUrls[3]" alt="Image 4" />
+          <img src="/src/assets/platenbeurs/huisstijl.jpg" alt="Image 4" />
         </div>
         <div class="slide" v-if="currentIndex === 4">
-          <img :src="imageUrls[4]" alt="Image 5" />
+          <img src="/src/assets/platenbeurs/magazineboek.jpg" alt="Image 5" />
         </div>
         <div class="slide" v-if="currentIndex === 5">
-          <img :src="imageUrls[5]" alt="Image 6" />
-        </div>
-        <div class="slide" v-if="currentIndex === 6">
-          <img :src="imageUrls[6]" alt="Image 7" />
+          <img
+            src="/src/assets/platenbeurs/t-shirtlogo3_platenbeurs.jpg"
+            alt="Image 6"
+          />
         </div>
       </div>
       <div class="slider-controls">
@@ -158,7 +158,7 @@ export default {
   name: 'graphicDesign',
   data() {
     return {
-      imageUrls: [
+      /*imageUrls: [
         '/src/assets/platenbeurs/Affiche2.jpg',
         '/src/assets/platenbeurs/Brochures.jpg',
         '/src/assets/platenbeurs/enveloppe.jpg',
@@ -166,11 +166,12 @@ export default {
         '/src/assets/platenbeurs/magazineboek.jpg',
         '/src/assets/platenbeurs/t-shirtlogo3_platenbeurs.jpg',
         // ... other image URLs ...
-      ],
+      ],*/
       currentIndex: 0,
       autoSlideInterval: 3000, // Adjust the interval as needed
       isAutoSliding: true,
       transitionDuration: 500,
+      totalSlides: 5,
       //isUserScrolling: false,
       //scrollTimeout: null,
       //scrollSpeed: 1, // Set the speed of the auto-scrolling
@@ -196,12 +197,12 @@ export default {
     },
     prevSlide() {
       this.currentIndex =
-        (this.currentIndex - 1 + this.imageUrls.length) % this.imageUrls.length;
+        (this.currentIndex - 1 + this.totalSlides) % this.totalSlides;
       this.stopAutoSlide();
       this.startAutoSlide();
     },
     nextSlide() {
-      this.currentIndex = (this.currentIndex + 1) % this.imageUrls.length;
+      this.currentIndex = (this.currentIndex + 1) % this.totalSlides;
       this.stopAutoSlide();
       this.startAutoSlide();
     },
